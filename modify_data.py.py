@@ -9,6 +9,10 @@ df["Quantity"] = np.random.randint(1, 100, len(df))
 
 df["Date"] = pd.date_range(start="2023-01-01", periods=len(df), freq="D")
 
+df["Delay"] = df["ATA"] - df["ETA"]
+
+result = df.groupby("Origin_City")["Delay"].mean().reset_index()
+
 df.to_excel("logistics_dataset.xlsx", index=False)
 
 print("✅ Dataset modified successfully!")
