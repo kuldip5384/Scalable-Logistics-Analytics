@@ -13,8 +13,8 @@ The system processes massive volumes of shipment and GPS data using PySpark, ena
 
 ### ⚙️ Technologies Used
 
-* PySpark (Big Data Processing)
-* SQL (Data Storage)
+* Excel (Data Source)
+* Python (Pandas, NumPy)
 * Power BI (Visualization)
 
 ### 📊 Key Features
